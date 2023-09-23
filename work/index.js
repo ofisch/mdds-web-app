@@ -13,6 +13,7 @@ var app = http
   .listen(8080);
 
 var io = socketIO.listen(app);
+
 io.sockets.on("connection", function (socket) {
   // convenience function to log server messages on the client
   function log() {
